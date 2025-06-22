@@ -11,7 +11,8 @@ REGISTRY_URL="pawashedigambar"
 echo "Logging into Docker..."
 echo "$DOCKER_PASSWORD"
 echo "$DOCKER_USERNAME"
-echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+#echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+echo "Digambar@1991" | docker login -u "pawashedigambar" --password-stdin
 
 echo "Cleaning up Docker cache..."
 docker builder prune -af || true
