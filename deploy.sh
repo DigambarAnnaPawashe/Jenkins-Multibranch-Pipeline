@@ -9,6 +9,8 @@ IMAGE_TAG="latest"
 REGISTRY_URL="pawashedigambar"
 
 echo "Logging into Docker..."
+echo "$DOCKER_PASSWORD"
+echo "$DOCKER_USERNAME"
 echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
 
 echo "Cleaning up Docker cache..."
